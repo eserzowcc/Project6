@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toEndOf="@+id/button11"
         app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button11" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toEndOf="@+id/button21"
         app:layout_constraintTop_toBottomOf="@+id/button12" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button13" />
 
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button21" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
         app:layout_constraintStart_toEndOf="@+id/button31"
         app:layout_constraintTop_toBottomOf="@+id/button22" />
 
-    <Button
+    <edu.wcc.tictactoe.TicTacToeCell
         android:id="@+id/button33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

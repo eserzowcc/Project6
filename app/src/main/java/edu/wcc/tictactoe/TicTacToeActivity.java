@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import edu.wcc.tictactoe.business.PlayerType;
 import edu.wcc.tictactoe.business.TicTacToeBoard;
+import edu.wcc.tictactoe.TicTacToeCell;
 
 public class TicTacToeActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG=TicTacToeActivity.class.toString();
@@ -23,10 +24,10 @@ public class TicTacToeActivity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tic_tac_toe);
-        Button button11=(Button)findViewById(R.id.button11);
+        TicTacToeCell button11=(TicTacToeCell)findViewById(R.id.button11);
         button11.setOnClickListener(this);
         for( int counter=0; counter<cellButtons.length; counter++ ) {
-            Button currentButton = (Button)findViewById(cellButtons[counter]);
+            TicTacToeCell currentButton = (TicTacToeCell)findViewById(cellButtons[counter]);
             currentButton.setOnClickListener(this);
         }
     }
@@ -34,14 +35,14 @@ public class TicTacToeActivity extends AppCompatActivity implements View.OnClick
     // Set a tag in the view..
     @Override
     public void onClick(View view) {
-       Button myButton=(Button)view;
+        TicTacToeCell myButton=(TicTacToeCell)view;
        PlayerType myTurn=PlayerType.O;
        if( xTurn ) {
            myTurn=PlayerType.X;
            xTurn=false;
-           myButton.setText("X");
+           myButton.setPosition(PlayerType.X);
        } else { // This is when it's O's turn
-           myButton.setText("O");
+           myButton.setPosition(PlayerType.O);
            xTurn=true;
        }
 
